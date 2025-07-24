@@ -20,7 +20,7 @@ export default function Home() {
       </div>
 
       {/* Content Container */}
-      <div className='relative z-10 min-h-screen flex flex-col items-center justify-start pt-24 px-8'>
+      <div className='relative z-10 min-h-screen flex flex-col items-center justify-start pt-28 sm:pt-24 px-8'>
         {/* Video Section */}
         <div className='mb-10'>
           <div className='relative'>
@@ -83,7 +83,6 @@ export default function Home() {
             >
               Çok yakında
             </p>
-            <div />
           </div>
 
           {/* Loading Animation */}
