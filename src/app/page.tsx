@@ -48,7 +48,7 @@ export default function Home() {
         <div className='text-center max-w-2xl'>
           {/* Main Heading */}
           <h1
-            className='text-6xl font-semibold leading-tight mb-8 tracking-tight'
+            className='text-6xl font-bold leading-tight mb-8 tracking-tight'
             style={{
               color: 'var(--color-brand-primary)',
               fontFamily: 'var(--font-poppins)',
