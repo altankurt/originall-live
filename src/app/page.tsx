@@ -22,7 +22,7 @@ export default function Home() {
       {/* Content Container */}
       <div className='relative z-10 min-h-screen flex flex-col items-center justify-start pt-32 px-8'>
         {/* Video Section */}
-        <div className='mb-20'>
+        <div className='mb-15'>
           <div className='relative'>
             {/* Video with modern styling */}
             <video
