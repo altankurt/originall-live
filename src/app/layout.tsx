@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Inter, Poppins } from 'next/font/google'
+import { Inter, Poppins, Plus_Jakarta_Sans } from 'next/font/google'
 import './globals.css'
 
 const inter = Inter({
@@ -11,6 +11,12 @@ const poppins = Poppins({
   variable: '--font-poppins',
   subsets: ['latin'],
   weight: ['300', '400', '500', '600', '700', '800', '900'],
+})
+
+const plusJakartaSans = Plus_Jakarta_Sans({
+  variable: '--font-plus-jakarta',
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '600', '700', '800'],
 })
 
 export const metadata: Metadata = {
@@ -45,8 +51,8 @@ export default function RootLayout({
   return (
     <html lang='tr'>
       <body
-        className={`${inter.variable} ${poppins.variable} antialiased`}
-        style={{ fontFamily: 'var(--font-poppins)' }}
+        className={`${inter.variable} ${poppins.variable} ${plusJakartaSans.variable} antialiased`}
+        style={{ fontFamily: 'var(--font-plus-jakarta)' }}
       >
         {children}
       </body>

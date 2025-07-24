@@ -29,6 +29,7 @@ export default function Home() {
               autoPlay
               muted
               loop
+              playsInline
               className='rounded-2xl shadow-2xl border'
               style={{
                 width: '720px',
@@ -56,16 +57,16 @@ export default function Home() {
         <div className='text-center max-w-2xl'>
           {/* Main Heading */}
           <h1
-            className='text-5xl font-black leading-tight mb-8 tracking-tight'
+            className='text-6xl font-semibold leading-tight mb-8 tracking-tight'
             style={{
-              color: 'black',
+              color: 'var(--color-brand-primary)',
               fontFamily: 'var(--font-poppins)',
             }}
           >
             <MarkedText
               type='underline'
-              color='var(--color-brand-primary)'
-              strokeWidth={3}
+              color='#F6E96F'
+              strokeWidth={4}
               animationDuration={2000}
             >
               Değişim başlıyor
@@ -78,7 +79,7 @@ export default function Home() {
               className='text-3xl font-light tracking-wide'
               style={{
                 color: 'var(--color-brand-primary)',
-                fontFamily: 'var(--font-inter)',
+                fontFamily: 'var(--font-plus-jakarta)',
               }}
             >
               Çok yakında

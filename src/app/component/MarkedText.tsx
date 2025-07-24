@@ -38,6 +38,9 @@ const MarkedText = ({
 
   useEffect(() => {
     if (spanRef.current) {
+      // Safari detection
+      const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+      
       // Get responsive padding based on screen size
       const getResponsivePadding = () => {
         if (!responsive) return padding
@@ -73,13 +76,19 @@ const MarkedText = ({
         strokeWidth: getResponsiveStrokeWidth(),
         padding: getResponsivePadding(),
         iterations,
-        animationDuration,
+        animationDuration: isSafari ? animationDuration * 1.5 : animationDuration, // Safari needs longer duration
         roughOptions: {
           roughness,
           bowing,
         },
       })
-      annotation.show()
+      
+      // Safari-specific delay to ensure proper rendering
+      if (isSafari) {
+        setTimeout(() => annotation.show(), 100)
+      } else {
+        annotation.show()
+      }
     }
   }, [
     type,
