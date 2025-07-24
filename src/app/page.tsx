@@ -20,7 +20,7 @@ export default function Home() {
       </div>
 
       {/* Content Container */}
-      <div className='relative z-10 min-h-screen flex flex-col items-center justify-center px-8'>
+      <div className='relative z-10 min-h-screen flex flex-col items-center justify-start pt-32 px-8'>
         {/* Video Section */}
         <div className='mb-20'>
           <div className='relative'>
