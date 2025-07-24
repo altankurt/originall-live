@@ -34,22 +34,13 @@ export default function Home() {
               style={{
                 width: '720px',
                 height: 'auto',
-                borderColor: 'var(--color-brand-primary)',
+                borderColor: '#F6E96F',
                 borderWidth: '2px',
               }}
             >
               <source src='/video1.mp4' type='video/mp4' />
             </video>
 
-            {/* Decorative elements */}
-            <div
-              className='absolute -top-4 -left-4 w-8 h-8 rounded-full opacity-60'
-              style={{ backgroundColor: 'var(--color-brand-primary)' }}
-            />
-            <div
-              className='absolute -bottom-4 -right-4 w-6 h-6 rounded-full opacity-40'
-              style={{ backgroundColor: 'var(--color-brand-primary)' }}
-            />
           </div>
         </div>
 
