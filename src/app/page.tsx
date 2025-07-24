@@ -8,7 +8,7 @@ export default function Home() {
       style={{ backgroundColor: 'var(--color-background-light)' }}
     >
       {/* Logo Header */}
-      <div className='absolute top-8 left-8 z-20'>
+      <div className='absolute top-2 left-8 z-20'>
         <Image
           src='/logo.png'
           alt='Logo'
@@ -20,9 +20,9 @@ export default function Home() {
       </div>
 
       {/* Content Container */}
-      <div className='relative z-10 min-h-screen flex flex-col items-center justify-start pt-32 px-8'>
+      <div className='relative z-10 min-h-screen flex flex-col items-center justify-start pt-24 px-8'>
         {/* Video Section */}
-        <div className='mb-15'>
+        <div className='mb-10'>
           <div className='relative'>
             {/* Video with modern styling */}
             <video
@@ -73,7 +73,7 @@ export default function Home() {
           </h1>
 
           {/* Subtitle */}
-          <div className='relative mb-12'>
+          <div className='relative mb-8'>
             <p
               className='text-3xl font-light tracking-wide'
               style={{
@@ -83,10 +83,7 @@ export default function Home() {
             >
               Çok yakında
             </p>
-            <div
-              className='w-24 h-1 mx-auto mt-6 rounded-full'
-              style={{ backgroundColor: 'var(--color-brand-primary)' }}
-            />
+            <div />
           </div>
 
           {/* Loading Animation */}
