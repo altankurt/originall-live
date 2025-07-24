@@ -56,7 +56,7 @@ export default function Home() {
         <div className='text-center max-w-2xl'>
           {/* Main Heading */}
           <h1
-            className='text-7xl font-black leading-tight mb-8 tracking-tight'
+            className='text-5xl font-black leading-tight mb-8 tracking-tight'
             style={{
               color: 'black',
               fontFamily: 'var(--font-poppins)',
